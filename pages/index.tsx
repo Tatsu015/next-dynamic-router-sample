@@ -6,7 +6,7 @@ const Home: NextPage = () => {
   const [url, setURL] = useState<string>("");
   return (
     <>
-      <input type="text" onChange={e => { setURL("/result/" + e.currentTarget.value) }} />
+      <input type="date" onChange={e => { setURL("/result/" + e.currentTarget.value) }} />
       <Link href={url} >
         <button>Jump!</button>
       </Link>
